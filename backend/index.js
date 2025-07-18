@@ -10,7 +10,13 @@ dotenv.config();
 connectDB();
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: ["https://leaderboard-app-frontend-cyt8.onrender.com"],
+  methods: ["GET", "POST"],  
+  allowedHeaders: ["Content-Type", "Authorization"],  
+  credentials: true
+}));
+app.use(express.json());
 app.use(express.json());
 
 app.use('/api/auth', authRoutes);
