@@ -10,8 +10,7 @@ const Leaderboard = () => {
 
   return (
      <div className=" fixed top-30 lg:left-20 lg:right-20 ">
-    <div className=" bg-blue-50  border border-blue-500 rounded-2xl pl-60 pr-60 pt-50 pb-50">
-      <table className="lg:w-[80%]  table-auto border-collapse fixed top-40 lg:left-40 left-30 pb-10 ">
+      <table className="lg:w-[80%] bg-blue-50 table-auto border-collapse fixed top-40 lg:left-40 left-30 pb-10 ">
         <thead>
           <tr>
             <th className="border px-4 py-2 ">Rank</th>
@@ -30,7 +29,7 @@ const Leaderboard = () => {
         </tbody>
       </table>
     </div>
-    </div>
+    
   );
 };
 
