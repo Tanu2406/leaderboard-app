@@ -10,7 +10,6 @@ dotenv.config();
 connectDB();
 
 const app = express();
-app.use(express.static(path.join(__dirname, 'dist')));
 
 app.use(cors({
   origin: ["https://leaderboard-app-frontend-cyt8.onrender.com"],
