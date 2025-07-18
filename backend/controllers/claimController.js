@@ -1,4 +1,3 @@
-import History from '../models/History.js';
 import User from '../models/User.js';
 
 export const claimPoints = async (req, res) => {
